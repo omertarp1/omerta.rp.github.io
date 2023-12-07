@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitelist Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Whitelist Application</h1>
+        <p>Apply to join our whitelist community</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="#whitelist">Whitelist</a>
+        <a href="index.html#rules">Rules</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <section id="application-form">
+        <h2>Application Form</h2>
+        <form action="submit_application.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="character_name">Character Name:</label>
+            <input type="text" id="character_name" name="character_name" required>
+
+            <label for="reason">Why do you want to join?</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Roleplay Server
+    </footer>
+
+</body>
+</html>
